@@ -1,0 +1,24 @@
+a{
+  text-decoration: none;
+  color: darkgrey;
+  font-weight: bold;
+}
+a:hover{
+  transition: .5s color;
+  color: black;
+}
+body{
+  margin: 0;
+}
+#setlist{
+  padding: 0;
+  margin: 0;
+  background-color: #8ed3f5;
+}
+#map {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 250px;
+  width: 300px;
+}

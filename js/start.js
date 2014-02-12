@@ -1,0 +1,1 @@
+require(["domReady!","rsvp","setsView"],function(o,r,e){return r.on("error",function(o){return"function"==typeof console.error&&console.error("Error in promise"),"function"==typeof console.dir?console.dir(o):void 0}),e.init()});
