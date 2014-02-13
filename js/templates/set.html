@@ -1,6 +1,6 @@
-<ul id="setlist">
-  {{#sets}}
-  <li on-mouseenter="locate" on-click="go">
+<ul id="photolist" on-click="back">
+  {{#set.photo}}
+  <li>
     <!-- 
     {{title}}
     <a href="http://www.flickr.com/photos/61601734@N00/sets/{{id}}/">
@@ -10,7 +10,7 @@
       (go)
     </span>
      -->
-    <img src="{{img}}" alt="pic" />
+    <img src="{{url_m}}" alt="pic" />
   </li>
-  {{/sets}}
+  {{/set.photo}}
 </ul>

@@ -38,6 +38,14 @@ define(['reqwest'], function(reqwest) {
         method: 'flickr.photosets.getList',
         primary_photo_extras: 'url_s'
       });
+    },
+
+    getSet: function(id, cb) {
+      return reqwestFlickrJson(cb, {
+        method: 'flickr.photosets.getPhotos',
+        photoset_id: id,
+        extras: 'url_m'
+      });
     }
   }
 
